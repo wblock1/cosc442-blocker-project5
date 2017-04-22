@@ -1,0 +1,87 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs22 \cf0 Test Generation Using the W-method. V2.0. August 1, 2013\
+\
+Enter filename: BookExampleFSM.txt\
+FSM input from:  BookExampleFSM.txt\
+States: 5\
+Edges 10\
+Input alphabet:\
+0\
+1\
+\
+Output alphabet:\
+0\
+1\
+\
+From 	 Input/Output 	 To\
+1	 1/0		 1\
+1	 0/0		 2\
+2	 0/0		 3\
+2	 1/0		 5\
+3	 0/0		 4\
+3	 1/0		 5\
+4	 1/1		 3\
+4	 0/0		 2\
+5	 1/0		 1\
+5	 0/0		 4\
+\
+Transition cover set (P). 11 entries.\
+Empty 0 00 000 0000 0001 001 01 010 011 1 \
+\
+W Set. 2 entries.\
+01 1 \
+\
+Number of Test Cases :17\
+Test cases: [000001, 00001, 0001, 000101, 00011, 001, 00101, 0011, 01, 01001, 0101, 011, 01101, 0111, 1, 101, 11]\
+\
+FSM execution begins. Input: 0 1  Initial state: 1\
+Current state: 1\
+ Input: 0 Next state: 2 Output: 0\
+Current state: 2\
+ Input: 1 Next state: 5 Output: 0\
+\
+FSM execution completed. Final state: 5\
+Output pattern:00\
+\
+FSM execution begins. Input: 0 1  Initial state: 2\
+Current state: 2\
+ Input: 0 Next state: 3 Output: 0\
+Current state: 3\
+ Input: 1 Next state: 5 Output: 0\
+\
+FSM execution completed. Final state: 5\
+Output pattern:00\
+\
+FSM execution begins. Input: 0 1  Initial state: 3\
+Current state: 3\
+ Input: 0 Next state: 4 Output: 0\
+Current state: 4\
+ Input: 1 Next state: 3 Output: 1\
+\
+FSM execution completed. Final state: 3\
+Output pattern:01\
+\
+FSM execution begins. Input: 0 1  Initial state: 4\
+Current state: 4\
+ Input: 0 Next state: 2 Output: 0\
+Current state: 2\
+ Input: 1 Next state: 5 Output: 0\
+\
+FSM execution completed. Final state: 5\
+Output pattern:00\
+\
+FSM execution begins. Input: 0 1  Initial state: 5\
+Current state: 5\
+ Input: 0 Next state: 4 Output: 0\
+Current state: 4\
+ Input: 1 Next state: 3 Output: 1\
+\
+FSM execution completed. Final state: 3\
+Output pattern:01\
+}
